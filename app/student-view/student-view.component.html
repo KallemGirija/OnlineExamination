@@ -1,0 +1,30 @@
+<button  class="btn btn-primary" (click)="viewAllStudents()">All Students</button>
+<div *ngFor="let s of allStudents" style="background-color:rgb(244, 166, 138);">
+<table>
+    <td><p>{{s.studentId}}</p>
+        <h2>{{s.userName}} </h2>
+        <hr />
+        <p>{{s.password}}</p>
+        <br>
+        <p>{{s.firstName}}</p>
+        <br>
+        <p>{{s.lastName}}</p>
+        <br>
+        <p>{{s.password}}</p>
+        <br>
+        <p>{{s.gender}}</p>
+        <br>
+        <p>{{s.emailId}}</p>
+        <br>
+        <p>{{s.mobileNo}}</p>
+        <br>
+
+    </td>
+
+<hr>
+<button  class="btn btn-primary" (click)=" addStudent(s.studentId)">
+    Add Students</button>
+</table>
+</div>
+<hr/>
+

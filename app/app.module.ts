@@ -16,6 +16,7 @@ import { RouterModule,Routes } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import{FormsModule} from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { StudentViewComponent } from './student-view/student-view.component';
 
 
 
@@ -38,7 +39,8 @@ const allLinks:Routes = [
     AdminViewComponent,
     TestPaperAdminWorkComponent,
     TestPaperAdminViewComponent,
-    AboutComponent
+    AboutComponent,
+    StudentViewComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(allLinks),
