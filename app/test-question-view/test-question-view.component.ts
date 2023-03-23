@@ -3,6 +3,7 @@ import { TestQuestionDto } from '../test-question-dto';
 import { TestQuestionService } from '../test-question.service';
 import { Router } from '@angular/router';
 import { TestQuestion } from '../test-question';
+import { TestPaper } from '../test-paper';
 
 @Component({
   selector: 'app-test-question-view',
@@ -38,19 +39,28 @@ export class TestQuestionViewComponent {
   }
 
   viewAllTestQuestions(){
-    
-    
-    this.__TestQuestionService.getAllQuestionByTestPaperId.subscribe(
+    this.__TestQuestionService.getAlltestQuestion().subscribe(
       data=>{
-       console.log("data:-"+data);
-       this.testQuestion=data;
-       
+        console.log("data:-"+data);
+        this.testQuestion  = data;
       },err=>{
-       console.log("error from spring",err);
-       
+        console.log("error from spring",err);
+
       }
-   )
+    )
  
+    }
+
+    onUpdate(){
+      this.__TestQuestionService.UpdateTestPaperWithTestQuestion(this.testQuestionId,this.testPaperId).subscribe(
+
+        data=>{
+          this.status=true;
+          this.message="TestQuestions updated";
+        },error=>{
+          
+        }
+      )
     }
 }
 

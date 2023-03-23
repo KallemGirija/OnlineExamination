@@ -24,22 +24,21 @@ export class AdminViewComponent {
   }
 
   addTestPaper(examId:number){
-    localStorage.removeTestpaper('examId');
-    localStorage.setTestpaper('examId',examId+'');
+    //localStorage.removeTestpaper('examId');
+    //localStorage.setTestpaper('examId',examId+'');
     this.router.navigate(['addtestpapers']);
 
   }
 
-  viewAllExams(){
-    this.__examService.getAllexam().subscribe(
-      data=>{
-        console.log("data:-"+data);
-        this.allExams=data;
-      },err=>{
-        console.log("error from spring",err);
-      }
+ viewAllExams(){
+  this.__examService.getAllexam().subscribe(
+    data=>{
+      console.log("data:-"+data);
+      //this.allExams=data;
+    },err=>{
+      console.log("error from spring",err);
+    }
+  )
+ }
 
-    )
-  }
-
-}
+ }

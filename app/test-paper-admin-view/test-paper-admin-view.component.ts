@@ -24,8 +24,8 @@ export class TestPaperAdminViewComponent {
 }
 
 addTestQuestion(testPaperId:number){
-  localStorage.removeTestQuestion('testPaperId');
-  localStorage.setTestQuestion('testPaperId',testPaperId+'');
+  //localStorage.removeTestQuestion('testPaperId');
+  //localStorage.setTestQuestion('testPaperId',testPaperId+'');
   this.router.navigate(['addquestions']);
 
 }

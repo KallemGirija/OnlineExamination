@@ -63,10 +63,10 @@ constructor() {
 
     doLogin(ipUsername:string,ipPassword:string):boolean
   {
-    localStorage.removeTestQuestion('username')
-    localStorage.removeTestQuestion('role')
-    localStorage.removeTestQuestion('loginStatus')
-    localStorage.removeTestQuestion('photo')
+    // localStorage.removeTestQuestion('username')
+    // localStorage.removeTestQuestion('role')
+    // localStorage.removeTestQuestion('loginStatus')
+    // localStorage.removeTestQuestion('photo')
 
     console.log("inside Service : "+ipUsername+" & "+ipPassword);
    
@@ -77,10 +77,10 @@ constructor() {
        if(thisUser.username == ipUsername && thisUser.password == ipPassword)
        {
 
-        localStorage.setTestQuestion("username",ipUsername);
-        localStorage.setTestQuestion("role",thisUser.role);
-        localStorage.setTestQuestion("loginStatus",true+'');
-        localStorage.setTestQuestion("photo",thisUser.photo);
+        // localStorage.setTestQuestion("username",ipUsername);
+        // localStorage.setTestQuestion("role",thisUser.role);
+        // localStorage.setTestQuestion("loginStatus",true+'');
+        // localStorage.setTestQuestion("photo",thisUser.photo);
         
         console.log("inside service for true ");
         return true;
@@ -96,10 +96,10 @@ constructor() {
 
   doUserLogout()
   {
-    localStorage.removeTestQuestion('username')
-    localStorage.removeTestQuestion('role')
-    localStorage.removeTestQuestion('loginStatus')
-    localStorage.removeTestQuestion('photo')
+    // localStorage.removeTestQuestion('username')
+    // localStorage.removeTestQuestion('role')
+    // localStorage.removeTestQuestion('loginStatus')
+    // localStorage.removeTestQuestion('photo')
 
     console.log("inside Service logout ");
   }

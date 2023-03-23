@@ -23,8 +23,8 @@ export class TestQuestionsAddComponent {
 
   constructor(private TestQuestionService:TestQuestionService,private http:HttpClient) {
     this.__testQuestionService = TestQuestionService;
-    this.testPaperId = localStorage.getTestQuestion('testPaperId') || '';
-    this.testQuestionId=localStorage.getTestQuestion('testQuestionId')||'';
+    //this.testPaperId = localStorage.getTestQuestion('testPaperId') || '';
+    //this.testQuestionId=localStorage.getTestQuestion('testQuestionId')||'';
     console.log(this.testPaperId);
 
     
