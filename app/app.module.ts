@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminWorkComponent } from './admin-work/admin-work.component';
 //import { UserComponent } from './user/user.component';
-import { StudentComponent } from './student/student.component';
 import { TestQuestionsAddComponent } from './test-questions-add/test-questions-add.component';
 import { TestQuestionViewComponent } from './test-question-view/test-question-view.component';
 import { DataOperationService } from './data-operation-service';
@@ -16,7 +15,6 @@ import { RouterModule,Routes } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import{FormsModule} from '@angular/forms';
 import { AboutComponent } from './about/about.component';
-import { StudentViewComponent } from './student-view/student-view.component';
 
 
 
@@ -32,15 +30,13 @@ const allLinks:Routes = [
     AppComponent,
     AdminWorkComponent,
     //UserComponent,
-    StudentComponent,
     TestQuestionsAddComponent,
     TestQuestionViewComponent,
     //DataOperationService,
     AdminViewComponent,
     TestPaperAdminWorkComponent,
     TestPaperAdminViewComponent,
-    AboutComponent,
-    StudentViewComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(allLinks),
