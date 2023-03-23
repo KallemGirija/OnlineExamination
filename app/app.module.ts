@@ -15,6 +15,7 @@ import { TestPaperAdminViewComponent } from './test-paper-admin-view/test-paper-
 import { RouterModule,Routes } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import{FormsModule} from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -36,7 +37,8 @@ const allLinks:Routes = [
     //DataOperationService,
     AdminViewComponent,
     TestPaperAdminWorkComponent,
-    TestPaperAdminViewComponent
+    TestPaperAdminViewComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(allLinks),
